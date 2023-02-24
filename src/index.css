@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,161 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
+
+body {
+  background-image: url(./images/supraopaque.png);
+  background-size: cover;
+  background-repeat: repeat;
+  
+  /* font-family: "Montserrat", sans-serif; */
+}
+
+.navMenu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.navMenu a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 1000;
+  padding: 2%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+  color: teal;
+}
+
+.navMenu a:nth-child(1):hover ~ {
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover ~ {
+  -webkit-transform: translateX(110px);
+  transform: translateX(110px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover ~ {
+  -webkit-transform: translateX(200px);
+  transform: translateX(200px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(4):hover ~ {
+  -webkit-transform: translateX(285px);
+  transform: translateX(285px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  color: black;
+  text-decoration: none;
+  font-size: 2.0em;
+  text-transform: uppercase;
+  font-weight: 1000;
+  padding: 2%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.factheader {
+  display: flex;
+  justify-content: center;
+  padding-top: 15%;
+}
+
+.factcontent {
+  display: flex;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+:root {
+  font-size: 20px;
+  box-sizing: inherit;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.pcard {
+  margin: 0;
+}
+
+.pcard:not(:last-child) {
+  margin-bottom: 1.5em;
+}
+
+.bodycard {
+  font: 1em/1.618 Inter, sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  padding-top: 100px;
+  
+  color: #224;
+}
+
+.card {
+  max-width: 300px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  max-width: 500px;
+  height: 300px;
+  padding: 35px;
+
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+  backdrop-filter: blur(15px);
+}
+
+.card-footer {
+  font-size: 0.75em;
+  color: teal;
+}
+
+
